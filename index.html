@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
     <title>Customize your notes</title>
 
 </head>
@@ -47,23 +47,44 @@ height:60px;
    <p> Set a color of text <br> <input type="color" name="" id="colortext" placeholder="set a color of text"></p>
   <p> <input type="text" name="" id="header" placeholder="Type heading here"> </p>
   <p> <input type="button" class="btn btn-outline-success" value="header Priview" id="btn1" onclick="Previewfooter()"></p>
-  <p> Use it as HTML viewer also. 
+  <p>
     <textarea name="" id="textArea" cols="30" rows="10" placeholder="write something" style="width: 100%;padding: 10px;outline: none;"></textarea>
     <p> <input type="text" name="" id="footer" placeholder="Type footer here"> </p>
    <p> <input type="button" class="btn btn-outline-success" value=" Footer Priview" id="btn1" onclick="Previewheader()"><br> </p>
-    <b>Note: Type &lt;br&gt; to write in next line. </b> <br>
-    
+
     <input type="button" class="btn btn-outline-success" value=" Body Priview" id="btn1" onclick="Preview()">
     <input type="button" class="btn btn-outline-success" value="Print" id="btn2" onclick="window.print()"> 
     </p>
-    <hr>
+
+    <p>
+      
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Some Rules for use it.
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+        <p> 1. You can also use it as HTML viewer.</p>
+        <p> 2. You can also change or formatting text by inserting HTML tags</p>
+        <p>3. Rules of inserting HTML tags: <br> &lt;h1&gt;write any text&lt;/h1&gt; </p>
+        <p>4. Some HTML tags we use. </p>
+        <p> &lt;b&gt;write any text&lt;/b&gt; <b> Bold text </b></p>
+       <p> &lt;u&gt;write any text&lt;/u&gt; <u> underline text </u></p>
+      <p> &lt;i&gt;write any text&lt;/i&gt; <i> Bold text </i></p>
+      <p>&lt;center&gt;write any text&lt;/center&gt; <i>text in center</i></p>
+      <p>And so many tags are available.</p>
+        </div>
+      </div>
+
+
+    <hr style="background-color:blue;height:5px;">
+
 </div>
 <div id="result">
     <p id="head" style="text-align: left;"></p>
     <p id="display"></p>
     <p id="foot" style="text-align: right;"></p>
 </div>
-
 
     <script>
         function textleft(){
