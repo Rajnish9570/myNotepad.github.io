@@ -19,6 +19,8 @@
  }
  body{
         margin: 10px;
+     
+       
  }
     #fontSize,#fontWeight,#letterspacing{
         width: 60px;
@@ -26,6 +28,8 @@
 #header,#footer{
 width:100%;
 height:60px;
+border: none;
+outline: none;
 }
 
 </style>
@@ -50,18 +54,20 @@ height:60px;
   <p>
     <textarea name="" id="textArea" cols="30" rows="10" placeholder="write something" style="width: 100%;padding: 10px;outline: none;"></textarea>
     <p> <input type="text" name="" id="footer" placeholder="Type footer here"> </p>
-   <p> <input type="button" class="btn btn-outline-success" value=" Footer Priview" id="btn1" onclick="Previewheader()"><br> </p>
+  
+    <input type="button" class="btn btn-outline-success" value=" Footer Priview" id="btn1" onclick="Previewheader()" >
+  
+   <center><p> <input type="button" class="btn btn-outline-success" value=" Body Priview" id="btn1" onclick="Preview()"> </p> </center>
+ <input type="button" class="btn btn-outline-success" value="Print" id="btn2" onclick="window.print()"></p>
 
-    <input type="button" class="btn btn-outline-success" value=" Body Priview" id="btn1" onclick="Preview()">
-    <input type="button" class="btn btn-outline-success" value="Print" id="btn2" onclick="window.print()"> 
-    </p>
-
-    <p>
-      
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+   <p>
+       <center>
+        <button class="btn btn-primary"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
           Some Rules for use it.
         </button>
-      </p>
+        </center>
+   </p>
+      
       <div class="collapse" id="collapseExample">
         <div class="card card-body bg-dark text-light">
         <p> 1. You can also use it as HTML viewer.</p>
@@ -75,10 +81,7 @@ height:60px;
       <p>And so many tags are available.</p>
         </div>
       </div>
-
-
-    <hr style="background-color:blue;height:5px;">
-
+<hr>
 </div>
 <div id="result">
     <p id="head" style="text-align: left;"></p>
